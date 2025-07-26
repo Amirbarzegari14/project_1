@@ -7,7 +7,6 @@ use Illuminate\Validation\ValidationException;
 use App\Models\User;
 
 Route::post('/login', function (Request $request) {
-    dd($request->all());
     $request->validate([
         'email' => 'required|email',
         'password' => 'required',
